@@ -82,7 +82,7 @@ header .container{
     opacity: 0;
   }
 
-.nav-link .li-menu{
+.nav-link:hover .li-menu{
     top:100px;
     width:100%;
     height:100px;
