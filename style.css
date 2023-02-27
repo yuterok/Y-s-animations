@@ -190,4 +190,36 @@ h1{
 
 .experience{
     margin-top: 40px;
+    margin-bottom: 30px;
+}
+.experience-block{
+    margin-top: 60px;
+    display: flex;
+}
+.experience-item{
+    display: flex;
+    margin-bottom: 30px;
+}
+.experience-year{
+    font-weight: 700;
+    font-size: 32px;
+    color: #E95859;
+    margin-right: 25px;
+}
+.exp-dash{
+    margin-right: 25px;
+}
+.experience-photos{
+    position: absolute;
+}
+#cap{
+    position: relative;
+    bottom: 150px;
+    left: 900px; 
+}
+
+#hm{
+    position: relative;
+    top: 100px;
+    left: 880px;
 }
