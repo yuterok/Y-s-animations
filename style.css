@@ -5,6 +5,7 @@
 }
 
 body{
+    background-color: white;
     background: url(img/back.png);
     font-family: 'SF Pro Display', sans-serif;
     font-weight: 400;
@@ -52,7 +53,7 @@ header .container{
     display: block;
     text-decoration: none;
     color: black;
-    margin-right: 4vw;
+    margin-right: 2vw;
 }
 
 .nav-link a{
@@ -60,7 +61,7 @@ header .container{
     color: black;
 }
 .nav-link:last-child{
-    margin-right: 2vw;
+    margin-right: 1vw;
 }
 
 .li-menu{
@@ -69,13 +70,13 @@ header .container{
     backdrop-filter: blur(5.5px);
     position:absolute;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     top:100px;
     left: -0;
     width: 100%;
     height:0;
-    -webkit-transition:ease .7s;
+    -webkit-transition: ease .7s;
     z-index:-1;
     font-size:0;
     visibility: hidden;
@@ -87,11 +88,17 @@ header .container{
     width:100%;
     height:100px;
     color:#fff;
-    -webkit-transition:ease .7s;
+    -webkit-transition: ease .7s;
     visibility: visible;
     opacity: 100%;
+    background: rgba(234, 234, 234, 0.7);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5.5px);
   }
-  
+
+.li-menu a{
+    margin-right: 2vw;
+}
 ul li a{
     text-decoration:none;
     font-size: 24px;
@@ -132,4 +139,55 @@ h1{
 
 .about-photo{
     margin-top: -55px;
+}
+
+/* SKILLS */
+
+.skills-emoji-block{
+    padding:0 95px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-emoji-item{
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+    width: 555px;
+}
+
+.skills-emoji{
+    margin-right: 55px;
+}
+.skills h3{
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 500;
+}
+.skills-visualizer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 530px;
+    justify-content: space-between;
+}
+.skills-tool{
+    margin-right: 24px;
+    width: 95px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* EXPERIENCE */
+
+.experience{
+    margin-top: 40px;
 }
