@@ -20,7 +20,6 @@ header{
     height: 100px;
     background: rgba(234, 234, 234, 0.7);
     box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5.5px);
 }
 
 header .container{
@@ -64,10 +63,18 @@ header .container{
     margin-right: 1vw;
 }
 
+header::before, .li-menu::before{
+    backdrop-filter: blur(5px);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -3;
+}
 .li-menu{
-    background: rgba(234, 234, 234, 0.7);
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5.5px);
     position:absolute;
     display: flex;
     justify-content: center;
@@ -92,8 +99,7 @@ header .container{
     visibility: visible;
     opacity: 100%;
     background: rgba(234, 234, 234, 0.7);
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5.5px);
+    box-shadow: 0px 25px 18px rgba(0, 0, 0, 0.1);
   }
 
 .li-menu a{
