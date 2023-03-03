@@ -220,13 +220,13 @@ h1{
 }
 #cap{
     position: relative;
-    bottom: 150px;
+    bottom: 170px;
     left: 900px; 
 }
 
 #hm{
     position: relative;
-    top: 100px;
+    top: 50px;
     left: 880px;
 }
 
@@ -249,6 +249,7 @@ footer{
 }
 .credit{
     text-align: center;
+    font-size: 18px;
 }
 
 
