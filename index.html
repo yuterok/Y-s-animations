@@ -10,9 +10,9 @@
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">Y's animations</a>
+            <a href="index.html" class="logo">Y's&nbsp;animations</a>
             <ul class="nav">
-                <li class="nav-link"><a href="">работы</a>
+                <li class="nav-link"><a href="1_work.html">работы</a>
                     <div class="li-menu">
                         <a href="1_work.html">работа 1</a>
                         <a href="2_work.html">работа 2</a>
@@ -24,15 +24,15 @@
                         <a href="">работа 8</a>
                       </div>
                 </li>
-                <li class="nav-link"><a href="">обо мне</a></li>
-                <li class="nav-link"><a href="">навыки</a></li>
-                <li class="nav-link"><a href="">опыт</a></li>
-                <li class="nav-link"><a href="">контакты</a></li>
+                <li class="nav-link"><a href="#about">обо мне</a></li>
+                <li class="nav-link"><a href="#skills">навыки</a></li>
+                <li class="nav-link"><a href="#experience">опыт</a></li>
+                <li class="nav-link"><a href="#contact">контакты</a></li>
             </ul>  
         </div>
     </header>
     <div class="container">
-        <section class="about">
+        <section id="about" class="about">
             <div class="about-text">
                 <h1>Привет, я Юля &nbsp;:)</h1>
                 <p>Мне 21 год, я учусь в университете промышленных<br> технологий и дизайна, и на этом сайте можно увидеть мои<br> работы по web-анимации в рамках дисциплины Web-дизайн
@@ -41,7 +41,7 @@
                 <p>Планирую развиваться во frontend разработке</p>
             </div>
             <div class="about-photo">
-                <img src="img/me.png" alt="me">
+                <img src="img/me.png" alt="me" >
             </div>
         </section>
         <section class="skills">
@@ -94,7 +94,7 @@
                     </div>
                 </div>
                 <div class="skills-item">
-                    <div class="skills-tool">
+                    <div id="skills" class="skills-tool">
                         <img src="img/css.png" alt="">
                     </div>
                     <div class="skills-percentage">
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
             <h1>Мой опыт</h1>
             <div class="experience-block">
                 <div class="experience-text">
@@ -180,7 +180,7 @@
             </div>
         </section>
     </div>
-    <footer>
+    <footer id="contact">
         <div class="socials">
             <a href="https://www.instagram.com/yuterok" class="social-icon">
                 <img src="img/instagram (2) 1.png" alt="">
@@ -194,5 +194,6 @@
         </div>
         <div class="credit">Julia Tereschenko ♡ 2023</div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
