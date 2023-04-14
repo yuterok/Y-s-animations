@@ -18,3 +18,4 @@ for (let anchor of anchors){
         }
     })
 }
+console.log(anchors)
