@@ -8,7 +8,6 @@
 body{
     background-color: white;
     background: url(img/back.png);
-    /* font-family: 'SF Pro Display', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 22px;
@@ -41,6 +40,7 @@ header .container{
     padding: 30px 25px;
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 }
 .logo:hover{
     background-color: #D9D9D9;
@@ -92,6 +92,7 @@ header::before, .li-menu::before{
     opacity: 0;
   }
 
+
 .nav-link:hover .li-menu{
     top:100px;
     width:100%;
@@ -110,9 +111,11 @@ header::before, .li-menu::before{
 ul li a{
     text-decoration:none;
     font-size: 24px;
+    transition: 0.3s;
   }
 ul li a:hover{
     color:#FF4848;
+
   }
 
 .container{
@@ -146,13 +149,26 @@ h1{
 }
 
 .about-photo{
-    margin-top: -55px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
 }
+.about-photo img{
+    margin-left: 150px;
+    height: 555px;
+    transform: rotate(12deg) translateX(-70px) translateY(10px);
+    z-index: -10000;
+    border: 15px solid white;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.2);
+}
+.about-photo:hover{
+    transform: rotate(15deg);
+    scale: 110%;}
 
 /* SKILLS */
 
 .skills-emoji-block{
-    padding:0 95px;
+    padding-left: 75px;
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -191,8 +207,12 @@ h1{
     width: 95px;
     display: flex;
     justify-content: center;
+    transition: 0.3s;
 }
 
+.skills-tool:hover{
+    scale: 90%;
+}
 
 /* EXPERIENCE */
 
@@ -224,14 +244,20 @@ h1{
     position: relative;
     bottom: 170px;
     left: 900px; 
+    transition: 0.4s;
 }
-
+#cap:hover{
+    scale: 120%;
+}
 #hm{
     position: relative;
     top: 50px;
     left: 880px;
+    transition: 0.4s;
 }
-
+#hm:hover{
+    scale: 120%;
+}
 /* FOOTER */
 
 footer{
@@ -248,6 +274,15 @@ footer{
     justify-content: space-between;
     width: 275px;
     margin: 90px auto 60px;
+}
+
+.socials img{
+    transition: 0.3s;
+}
+.socials img:hover{
+    scale: 95%;
+    opacity: 50%;
+
 }
 .credit{
     text-align: center;
